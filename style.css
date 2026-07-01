@@ -40,3 +40,81 @@ nav a{
 nav a:hover{
     color:orange;
 }
+/* Hero Section */
+
+.hero{
+    height:100vh;
+
+    background-image:url("images/image art.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+/* Dark Overlay */
+
+.hero-content{
+
+    background:rgba(0,0,0,0.55);
+
+    padding:40px;
+
+    border-radius:15px;
+}
+
+/* Title */
+
+.hero h1{
+
+    color:white;
+
+    font-size:70px;
+
+    margin-bottom:20px;
+}
+
+/* Subtitle */
+
+.hero p{
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:35px;
+}
+
+/* Button */
+
+.btn{
+
+    background:orange;
+
+    color:black;
+
+    padding:15px 40px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    border-radius:40px;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    background:white;
+}
