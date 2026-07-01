@@ -21,3 +21,21 @@ setInterval(() => {
     document.getElementById("seconds").innerHTML = seconds;
 
 },1000);
+const audio = document.getElementById("audio");
+const playBtn = document.getElementById("playBtn");
+
+playBtn.addEventListener("click", function () {
+
+    if (audio.paused) {
+
+        audio.play();
+        playBtn.innerHTML = "⏸";
+
+    } else {
+
+        audio.pause();
+        playBtn.innerHTML = "▶";
+
+    }
+
+});
