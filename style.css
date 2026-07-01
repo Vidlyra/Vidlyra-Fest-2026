@@ -405,3 +405,9 @@ nav a:hover{
 .guest-card p{
     color:#ddd;
 }
+.sponsor-card img{
+    width:220px;
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+}
