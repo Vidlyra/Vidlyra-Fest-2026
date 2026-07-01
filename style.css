@@ -614,3 +614,98 @@ nav a:hover{
     border:3px solid orange;
     box-shadow:0 0 30px rgba(255,165,0,0.5);
 }
+/*==========================
+SPOTIFY PLAYER
+===========================*/
+
+.music-player{
+
+    background:#181818;
+
+    max-width:420px;
+
+    margin:auto;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 0 25px rgba(255,165,0,.4);
+
+}
+
+.cover-art{
+
+    width:250px;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    margin-bottom:25px;
+
+}
+
+.music-player h3{
+
+    color:orange;
+
+    margin-bottom:10px;
+
+}
+
+.music-player p{
+
+    color:#bbb;
+
+    margin-bottom:25px;
+
+}
+
+#progress{
+
+    width:100%;
+
+    margin:20px 0;
+
+}
+
+.controls{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.controls button{
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:orange;
+
+    color:black;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.controls button:hover{
+
+    transform:scale(1.1);
+
+}
