@@ -39,3 +39,62 @@ playBtn.addEventListener("click", function () {
     }
 
 });
+// Progress bar
+const progress = document.getElementById("progress");
+
+// Time
+const currentTime = document.getElementById("currentTime");
+const duration = document.getElementById("duration");
+
+// Volume
+const volume = document.getElementById("volume");
+
+// Update progress and time
+audio.addEventListener("timeupdate", () => {
+
+    progress.max = audio.duration;
+
+    progress.value = audio.currentTime;
+
+    let currentMin = Math.floor(audio.currentTime / 60);
+    let currentSec = Math.floor(audio.currentTime % 60);
+
+    let totalMin = Math.floor(audio.duration / 60);
+    let totalSec = Math.floor(audio.duration % 60);
+
+    if(currentSec < 10) currentSec = "0" + currentSec;
+    if(totalSec < 10) totalSec = "0" + totalSec;
+
+    currentTime.textContent = currentMin + ":" + currentSec;
+
+    duration.textContent = totalMin + ":" + totalSec;
+
+});
+
+// Seek audio
+progress.addEventListener("input", () => {
+
+    audio.currentTime = progress.value;
+
+});
+
+// Volume
+volume.addEventListener("input", () => {
+
+    audio.volume = volume.value;
+
+});
+
+// Skip Back 10 seconds
+document.getElementById("backBtn").addEventListener("click", () => {
+
+    audio.currentTime -= 10;
+
+});
+
+// Skip Forward 10 seconds
+document.getElementById("nextBtn").addEventListener("click", () => {
+
+    audio.currentTime += 10;
+
+});
